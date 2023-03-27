@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /*FONTE ESCOLHIDA PARA COMPOR O SITE ENCONTRADA NO GOOGLE*/
+
+*{
+    box-sizing: border-box;
+}
+
+body { /*escrita*/
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #ECF2FF;    /*muda o fundo*/
+}
+
+
+a {    /*mudar a cor do link*/
+    text-decoration: none;
+    color: inherit;    /*cor do link*/
+}
+
+
+/*HEADER*/
+/*tela inicial*/
+header { /*imagem*/
+    background: no-repeat center/cover url('assets/projeto-preve-que-estadio-fique-pronto-em-2026-837889-article.webp'); /*imagem de fundo do site*/
+    height: calc(100vh - 000px); /*tamanho da imagem*/
+}
+
+
+header nav { /*ORGANIZOU*/
+    display: flex; /*ALINHA NA HORRIZONTAL*/
+    justify-content: space-between; /*organizou cada um em seu lado*/
+    margin: auto 10px;  /*distancia dos lados*/
+}
+
+header nav p{
+    font-weight: bold;
+}
+    
+/*ICONES DA DIREITA*/
+ul { 
+    list-style: none; /*apagou o ponto*/
+    font-weight: bold;   /* negrito*/
+    color:  #DC0000;  /*cor*/
+    font-size: 20px; /*tamanho*/
+    
+    /* text-decoration: underline; /*deixa sublinhado*/
+}
+
+header nav ul {    
+    display: flex; /*ALINHA NA HORRIZONTAL*/
+}
+
+header nav ul li {    /*deixa um espacinho entre ele*/
+    margin: 0 15px /*distancia dos lado*/
+}
+
+/*TITULO*/
+.header-content {    /*organiza*/   
+    max-width: 400;
+    margin: 150px auto; /*distancia dos lados*/
+    text-align: center;    /*escrita no meio*/
+    color:  white;  /*cor*/
+}
+
+
+.header-content h1{
+    margin-bottom: 10px; /*margin inferior*/
+    font-size: 10rem; /*tamanho da fonte*/
+}
+    
+
+.historia {
+    background: #F5EAEA; /*fundo*/
+    padding: 15px; /*MARGEM DE CIMA*/
+    height: calc(100vh - 000px); /*COBRE A TELA TODA*/
+}
+
+.historia .historia-cards { /*ALINHA OS PACOTES*/
+    display: flex; /*ALINHA NA HORRIZONTAL*/
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center; /*ajusta no meio*/
+}
+
+.historia .historia-tittle { /*ALINHA O CONHECA*/
+    width: 100%;
+    text-align: center; /*centraliza o texto no meio*/
+    margin: 25px 0; /*distancia das laterais*/
+    color: #E49393; /*cor*/
+    font-size: 3.5rem; /*tamanho da escrita*/
+}
+
+.historia .card { /*PARTE DE FUNDO DOS PACOTES*/
+    width: 280px; /*alinha*/
+    height: 500px; /*tamanho do fundo*/
+    background: white; /*cor do fundo*/
+    border-radius: 24px 0; /*deixa um lado da borda */
+    margin: 15px;    /*espaço entre os pacotes e os lados*/
+    position: relative; /* informações PREÇO E PROMOÇÃO*/
+}
+
+
+
+.historia .card-content {    /*muda os itensinho de cafe,wifi e papa*/
+    padding: 0 10px;
+
+}
+
+.historia .card h1{ /*texto PACOTE 5 NOITE...*/
+    color: #E49393; /*COR*/
+    text-align: center; /*alinha o texto no meio*/
+    font-size: 30px; /*TAMHO DA LETRA*/
+}
+
+/*icones e frases abaixo do... pacote 5 noite....*/
+.historia .card-content ul { /*alinha as frases*/
+    display: flex; /*alinha na horrizontal*/
+    flex-direction: column; /*um embaixo do outro*/
+    padding: 0;
+
+}
+
+.historia .card-content ul li { /*frase*/
+
+    font-size: 1.1rem; /*escrita */
+    display: flex; /*alinha na horrizontal*/
+    align-items: center; 
+    margin: 3px; /*distancia dos*/
+    color: #B2B2B2; /*cor*/
+    font-weight: bold; /*negrito*/
+}
+
+.historia .card-content ul li svg { /*icones*/
+
+    width: 16px; /*tamanho dos icones*/
+    height: 16px; /*espaço entre os as linhas no icone*/
+    margin-right: 15px; /*espaço entre os icones e a escrita*/
+}
+
+.historia .card-content ul li h1 {
+    font-size: 1rem;
+}
+
+
+/*jogadores*/
+
+.jogadores {
+    padding: 15px;
+    height: calc(100vh - 000px); /*COBRE A TELA TODA*/
+}
+
+.jogadores .jogadores-tittle{ /*escrita SERVIÇOS**/
+    text-align: center;  /*deixa no meio*/
+    margin: 35px 0; /*distancia dos icons*/
+    color: #E49393; /*cor*/
+    font-size: 3.5rem; /*tamanho da escrita SERVIÇOS*/
+}
+/*organiza as 3 informacoes*/
+.jogadores .jogadores-cards{ /*organiza*/
+    margin-top: 25px;
+    display: flex;/*alinha na horrizontal*/
+    max-width: 950px;
+    justify-content: center; /*deixa no centro*/
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.jogadores .card { 
+    width: 250px; /*alinha*/
+    height: 400px; /*tamho do 'quadro'*/
+    display: flex;/*alinha na horrizontal*/
+    flex-direction: column; /*escrita tour guiada em coluna*/
+    justify-content: center; 
+    align-items: center; /*alinha os itens*/
+    margin: 0 20px;
+}
+
+.jogadores .card svg {  /*icon*/
+    width: 40px;/*alinha*/
+    height: 40px; /*tamho do icons*/
+    margin: 50px; /* distancia da escrita a baixo*/
+    transition: all 1s;
+}
+
+.jogadores .card svg:hover { /*mause pad encima do icone*/
+    stroke: #E49393; /*cor*/
+    transform: scale(1.1);
+}
+
+.jogadores .card h3{ /*titulo tour guiado...*/
+    font-weight: bold; /*negrito*/
+    color: #000000; /*cor da escrita*/
+    font-size: 1.3Rem; /*tamanho da escrita */
+}
+
+.jogadores .card p {  /* textinho de tour guiado, fotografos proficionais, e aluguel de veiculos*/
+    color: #000000; /*cor da escrita*/
+    font-size: 0.8Rem; /*tamanho da escrita */
+    text-align: center; /*alinhamento para nao fica torto*/
+}
+
+.jogadores .card .card-content { /*alinha os tres textos TOUR, FOTOGRAFOS, ALUGUEIS um do lado do outro e na mesma autura e distancia*/
+    height: 180px; /*deixa na mesma autura*/
+    text-align: center; /*deixa alinhado bonitinho*/
+}
+
+
+/*CONTATOS*/
+.titulo { /*ENTRE EM CONTATO*/
+    padding: 60px;
+    background:#CBE4DE; /*cor do fundo*/
+    position: relative; /*ponha no lugar certo*/
+    text-align: right; /*cada um em um lado*/
+    height: calc(100vh - 000px); /*COBRE A TELA TODA*/
+}
+.titulo .titulo-card{  /*caixinha de entre em contato*/
+    width: 350px;
+    height: 300px;
+    background: white; /*fundo*/
+    position: absolute;
+    z-index: 99;
+    border-radius: 8px;  /*deixa O lado da bora redondo*/
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    text-align: center;
+    display: flex; /*alinha na horrizontal*/
+    flex-direction: column; /*cola um em baixo do outro*/
+    justify-content: center; /*distribui certinho no meio*/
+}
+.titulo .titulo-card h1{
+    padding-left: 50px;
+    text-align: left;
+}
+.titulo .titulo-card li{
+    font-size: 0.8rem; /*tamanho da letra*/
+    font-weight: bold; /*negrito*/
+    color: grey; /*cor da escrita*/
+    display: flex; /*alinha na horrizontal*/
+    align-items: center; 
+}
